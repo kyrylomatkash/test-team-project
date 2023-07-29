@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="rentyacht-section">
+      <div class="rentyacht-container">
+        <div class="rentyacht-image-container">
+          <p class="rentyacht-p">
+            Rent a<br />
+            yacht now
+          </p>
+        </div>
+        <div class="rent-yacht-form-container">
+          <form class="rent-yacht-form">
+            <div class="rent-yacht-form-container">
+              <label for="user-name" class="rent-yacht-input-label"></label>
+              <div class="rent-yacht-input-container">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  name="user-name"
+                  id="user-name"
+                  class="rent-yacht-input"
+                />
+              </div>
+            </div>
+            <div class="rent-yacht-form-container">
+              <label for="user-email" class="rent-yacht-input-label"></label>
+              <div class="rent-yacht-input-container">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="rent-yacht-input"
+                />
+              </div>
+            </div>
+            <div class="rent-yacht-form-container">
+              <label for="user-phone" class="rent-yacht-input-label"></label>
+              <div class="rent-yacht-input-container">
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  class="rent-yacht-input"
+                />
+              </div>
+            </div>
+            <div class="rent-yacht-textarea-container">
+              <label for="user-comment" class="rent-yacht-input-label"></label>
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                cols="30"
+                rows="10"
+                placeholder="Comment"
+                class="rent-yacht-textarea"
+              ></textarea>
+            </div>
+            <button class="rent-yacht-send-button" type="submit">
+              <p>Send</p>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="rent-modal-window">
+          <button class="rent-close-modal-window" data-modal-close>
+            <svg class="" width="24" height="24">
+              <use href=""></use>
+            </svg>
+          </button>
+          <div class="modal-text">
+            <img src="./rentiii/img-yaht.png" alt="" class="image-modal" />
+            <h3 class="rent-modal-window-heading">Thank You</h3>
+            <p class="rent-modal-window-p">
+              Thank you for choosing Yacht Adventures, your booking details have
+              been received and our team will be in touch shortly to confirm
+              your reservation and provide any additional information or
+              assistance you may need.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
